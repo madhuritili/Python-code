@@ -1,0 +1,247 @@
+FOR LOOP
+
+# TO PRINT 1 TO 10
+i=0
+for i in range(1,11):
+    print(i)
+
+
+#TO REVERSE A NO.
+i=0
+for i in range(1,11,-1):
+    print(i)
+
+
+
+#TO GET EVEN NUMBER
+for i in range(1,11,2):
+    print(i)
+
+for i in range(10,1,-2):
+    print(i)
+
+for i in range(10,0,-1):
+    print(i)
+
+#I/P=['python','sql']  o/p=[6,3]
+a=['python','sql']
+b=[]
+for i in a:
+    sum = 0
+    for j  in i:
+        sum=sum+1
+    b=b+[sum]
+print(b)
+
+
+#i/p=['hello','hi']  o/p=[2,6]
+a=['hello','hi']
+b=[]
+for i in a:
+    sum = 0
+    for j  in i:
+        if j in ('aeiouAEIOU'):
+            sum=sum+1
+    b=b+[sum]
+print(b)
+
+#i/p=['hello','hi']  o/p=[3,1]
+a=['hello','hi']
+b=[]
+for i in a:
+    sum = 0
+    for j  in i:
+        if j not in ('aeiouAEIOU'):
+            sum=sum+1
+    b=b+[sum]
+print(b)
+
+#i/p=['python','workshops']  o/p=[3,4]  (EVEN INDEX)
+a=['python','workshop']
+b=[]
+for i in a:
+    sum = 0
+    for j  in range(len(i)):
+        if j%2==0:
+            sum=sum+1
+    b = b + [sum]
+print(b)
+
+#i/p='aabbcc' o/p='a2b2c2'
+
+a='aabbcc'
+b=''
+for i in a:
+    if i not in b:
+        c=0
+        for j in a:
+            if i==j:
+                c=c+1
+        b=b+i+str(c)
+print(b)
+
+a='aabbcca'
+b=''
+for i in a:
+    if i not in b:
+        c=0
+        for j in a:
+            if i==j:
+                c=c+1
+        b=b+i+str(c)
+print(b)
+
+#i/p='aabbcc' o/p='abc222'
+
+a='aabbcc'
+b=''
+d=''
+f=''
+for i in a:
+    if i not in b:
+        c=0
+        for j in a:
+            if i==j:
+                c=c+1
+        b=b+i
+        d=d+str(c)
+        f=b+d
+print(f)
+
+a='abcabc'
+b=''
+d=''
+f=''
+for i in a:
+    if i not in b:
+        c=0
+        for j in a:
+            if i==j:
+                c=c+1
+        b=b+i
+        d=d+str(c)
+        f=b+d
+print(f)
+
+#FUNCTION
+
+# TO ADD NO.
+def add(a,b):
+    c=a+b
+    print(c)
+add(2,3)
+
+# OR
+
+def add(a,b):
+    return a+b
+print(add(2,3))
+
+# TO CHECK EVEN NO. OR NOT
+
+def even(a):
+    if a%2==0:
+        print("even")
+    else:
+        print("not even")
+even(2)
+
+# TO FIND A FACTORIAL
+
+def fact(a):
+    if a==1:
+        return 1
+    else:
+        return a*fact(a-1)
+
+print(fact(3))
+
+#factorial of a no.
+n=3
+f=1
+for i in range(1,n+1):
+    f=f*i
+print(f)
+
+def sum(n):
+    for i in range(1,n+1):
+        return n+i
+        i+=1
+print(sum(4))
+
+# PACKING
+
+def student(*a):
+    return stu
+print(student('madhu',12234))
+
+def display(a,b,c):
+    print(a,b,c)
+display(*(1,2,3))
+
+def display(a,b,c):
+    print(a,b,c)
+display(*{'m':2,'n':3,'o':4})
+
+def c(*a,**b):
+    print(a)
+    print(b)
+c(1,2,3,h=2,e=3)
+
+a=['python','workshop']
+b=[]
+for i in a:
+    sum = 0
+    for j  in range(len(i)):
+        if j%2==0:
+            sum=sum+1
+    b = b + [sum]
+print(b)
+
+def student(*a):
+    print([a])
+student('madhu',12234)
+
+a=['Hi','hello','bye','Python','sql']
+i=0
+b=[ ]
+while i<len(a):
+    if len(a[i])%2==0:
+        b+=a[i]
+    i+=1
+print(b)
+
+def d():
+    a=10
+    print(a)
+
+
+c=10
+def d():
+    print(c)
+    a=10
+    print(a)
+d()
+print(a) # it gives the error because a is defined inside the function. a is local variable. c is defined outside the function,
+        # so c is global variable, so we can't access the local variable outside the function, global variable(c) can be accessed inside the
+        # function but local variable can't access outside the function
+
+c=10
+a=10
+def d():
+    print(c)
+    a=10
+    print(a)
+d()
+print(a)  #it gives the o/p because a is now a global variable
+
+
+c=10
+def d():
+    global a
+    print(c)
+    a=10
+    print(a)
+d()
+print(a) # if we want to get a local variable in the global scope, we need make a as global inside the function, then we can acccess the a variable in the global scope """
+
