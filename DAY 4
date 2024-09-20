@@ -1,0 +1,97 @@
+#DAY 4
+
+def d():
+    a=10
+    print(a)
+
+
+c=10
+def d():
+    print(c)
+    a=10
+    print(a)
+d()
+print(a) # it gives the error because a is defined inside the function. a is local variable. c is defined outside the function,
+        # so c is global variable, so we can't access the local variable outside the function, global variable(c) can be accessed inside the
+        # function but local variable can't access outside the function
+
+c=10
+a=10
+def d():
+    print(c)
+    a=10
+    print(a)
+d()
+print(a)  #it gives the o/p because a is now a global variable
+
+
+c=10
+def d():
+    global a
+    print(c)
+    a=10
+    print(a)
+d()
+print(a) # if we want to get a local variable in the global scope, we need make a as global inside the function, then we can acccess the a variable in the global scope
+
+class collage:
+    cname="EWIT"
+    def __init__(self,name,usn):
+        self.name=name
+        self.usn=usn
+student=collage('Madhuri M',9858)
+print(student.name,student.usn,student.cname)
+
+class collage:
+    cname="EWIT"
+    def __init__(self,name,usn):
+        self.name=name
+        self.usn=usn
+student1=collage('Madhuri M',9858)
+student2=collage('nagi',9858)
+student3=collage('ashu',9858)
+student4=collage('muddu',9858)
+print(student1.name,student1.usn,student2.name,student2.usn,student3.name,student3.usn,student4.name,student4.usn,student4.cname)
+
+class student:
+    def __init__(self,name,usn,phone):
+        self.name=name
+        self.usn=usn
+        self.phone=phone
+details=student('madhu',74,9916869875)
+print(details.name,details.usn,details.phone)
+print(id(student))
+
+class student:
+    def __init__(self,name,usn,phone):
+        self.name=name
+        self.usn=usn
+        self.phone=phone
+details=student('madhu',74,9916869875)
+details1=student('nagi',75,9916879875)
+print(details.name,details.usn,details.phone,details1.name,details1.usn,details1.phone)
+print(id(student))
+print(id(details))
+print(id(details1)) """
+
+
+# IMPORTANT INTERVIEW QUESTIONS
+
+# EXPLAIN FEATURES OF OOOPS CONCEPT.
+# WHAT ARE DECORATORS?
+# WHAT ARE ITERATORS?
+# WHAT ARE GENERATORS?
+# WHAT IS POLYMORPHISM?
+# DEFINE ENCAPSULATION.
+# HOW DO U DO DATA ABSTRACTION IN PYTHON?
+# HOW IS MEMORY MANAGEMENT DONE IN PYTHON?
+      # Python uses it's private heapspace to manage memory.
+# WHAT IS SLICING
+# DIFFERENCE B/W PACKING AND UNPACKING
+# WHAT IS __INIT__ IN PYTHON?
+# WHAT ARE ACCESS SPECIFIER?
+# EXPLAIN DIFFERENCE B/W BREAK AND CONTINUE
+# WHAT DO U MEAN BY DYNAMIC PROGRAMMING LANGUAGE?
+# DIFFERENCE B'W MUTABLE AND IMMUTABLE DATA TYPES
+# DIFFERENCE B/W LIST AND TUPLE
+# DIFFERENCE B/W COMPILER V/S INTERPRETER
