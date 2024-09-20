@@ -1,0 +1,336 @@
+a=[1,2,3,4] check whether it is single valued or multivalued (single valued means the i/p should be int,
+float,bool, complex)
+
+a=[1,2,3,4]
+i=0
+if type(a[i]) in (int,float,bool,complex):
+    print("single valued")
+else:
+    print("not single valued")
+
+#WHILE CONDITION
+
+i=0
+while i<=10:
+    print(i)
+    i+=1
+
+# TO PRINT EVEN NUMBER UPTO 10
+i=0
+while i<=10:
+    if i%2==0:
+        print(i)
+    i+=1
+
+# TO PRINT ODD NUMBER UPTO 10
+i=0
+while i<=10:
+    if i%2!=0:
+        print(i)
+    i+=1
+
+#TABLE OF 2
+i=1
+while i<=10:
+    print("2*",i,"=",i*2)
+    i+=1
+
+#sum of even numbers upto 10
+i=0
+sum=0
+while i<=10:
+    if i%2==0:
+        sum=sum+i
+    i+=1
+    print(sum)
+
+i=0
+sum=0
+while i<=10:
+    if i%2==0:
+        sum=sum+i
+    i+=1
+print(sum)
+
+a=[1,2,3,4]
+i=0
+while i<len(a):
+    if type(a[i]) in (int,float,bool,complex):
+        print("single valued")
+
+    else:
+        print("not single valued")
+    i+=1
+
+
+# TO PRINT EVEN NO. STRING CHARACTER
+a='swapnodaya'
+i=0
+while i<len(a):
+    if i%2==0:
+        print(a[i])
+    i+=1
+
+# a='2ew24cs040#' write a program to get the o/p no.=224040 , alpha='ewcs' , special='#'
+
+a='2ew24cs040#'
+num=""
+alpha=""
+special=""
+i=0
+while i<len(a):
+    if '0'<=a[i]<='9':
+        num=num+a[i]
+    elif 'a'<=a[i]<='z' or 'A'<=a[i]<='Z':
+        alpha=alpha+a[i]
+    else:
+        special=special+a[i]
+    i+=1
+print("numbers:",num)
+print("alphabets:",alpha)
+print("special character:",special)
+
+
+# WRITE A PROGRAM TO GET THE TOTAL NO. OF ALPHABETS, NO. AND SPECIAL CHARACTERS IN A GIVEN STRING
+a='2ew24cs040#'
+num=""
+alpha=""
+special=""
+i=0
+num_count=""
+alpha_count=""
+special_count=""
+while i<len(a):
+    if '0'<=a[i]<='9':
+        num=num.count(a[i])
+    elif 'a'<=a[i]<='z' or 'A'<=a[i]<='Z':
+        alpha=alpha.count(a[i])
+    else:
+        special=special.count(a[i])
+    i+=1
+print("numbers:",num)
+print("alphabets:",alpha)
+print("special character:",special)
+
+a='2ew24cs040#'
+num=""
+alpha=""
+special=""
+i=0
+num_count=0
+alpha_count=0
+special_count=0
+while i<len(a):
+    if '0'<=a[i]<='9':
+        num=num+a[i]
+        num_count+=1
+    elif 'a'<=a[i]<='z' or 'A'<=a[i]<='Z':
+        alpha=alpha+a[i]
+        alpha_count+=1
+    else:
+        special=special+a[i]
+        special_count+=1
+    i+=1
+print("numbers:",num_count)
+print("alphabets:",alpha_count)
+print("special character:",special_count)
+
+# write a program to extract only special characters present inside a given string
+
+a='2ew24cs040#'
+special=""
+i=0
+while i<len(a):
+    if not  ('0'<=a[i]<='9' or 'A'<=a[i]<='z' or 'a'<=a[i]<='z'):
+        special=special+a[i]
+    i+=1
+print(special)
+
+a='2ew24cs040#09"'
+special=""
+i=0
+while i<len(a):
+    if not  ('0'<=a[i]<='9' or 'A'<=a[i]<='z' or 'a'<=a[i]<='z'):
+        special=special+a[i]
+        print(special)
+    i+=1
+
+
+# c=['hi','90','hello',90]  output c=['hi','90','hello']
+
+c=['hi','90','hello',90]
+c.pop()
+print(c)
+
+# e=ok!bye  output=2
+
+e="oK!BYe"
+b=e.index("!")
+print(b)
+
+e="oK!BYe"
+i=0
+count=0
+while i<len(e):
+    if 'a'<=e[i]<='z':
+        count += 1
+    i+=1
+print(count)
+
+
+# TO COUNT NO. OF VOWELS IN A GIVEN STRING
+a="oK!BYe"
+i=0
+count=0
+while i<len(a):
+    if a[i] in ('aeiouAEIOU'):
+        count += 1
+    i+=1
+print(count)
+
+c=['hi','90','hello',90]
+d=[ ]
+i=0
+while i<len(c):
+    if type(c[i])==str:
+        d=d+[c[i]]
+    i+=1
+print(d)
+
+
+# i/p=['Hi','hello','bye','Python','sql'] o/p=['hi','python']
+a=['Hi','hello','bye','Python','sql']
+i=0
+b=""
+while i<len(a):
+    ifi%2==0:
+        b+=a[i]
+        print(a[i])
+    i+=1
+print(a[i])
+
+# i/p=[0,1,12,20,3,12,5,28,25]  o/p=34
+a=[0,1,12,20,3,12,5,28,25]
+i=0
+sum=0
+while i<len(a):
+    if a[i]%2!=0:
+        sum=sum+a[i]
+
+    i+=1
+print(sum)
+
+
+a=['Hi','hello','bye','Python','sql']
+i=0
+b=[ ]
+while i<len(a):
+    if len(a[i])%2==0:
+        b+=a[i]
+    i+=1
+print(b)
+
+
+#i/p="roses are red"  o/p="roses_are_red"
+a="roses are red"
+i=0
+c=''
+while i<len(a):
+    if a[i]==' ':
+        c=c+'_'
+    else:
+        c=c+a[i]
+    i+=1
+print(c)
+
+# i/p=['hi','python']  o/p=[2,6]
+a=['hi','python']
+i=0
+c=[]
+while i<len(a):
+    c=c+[len(a[i])]
+    i+=1
+print(c)
+
+# i/p="123456"  o/p="654321" without using slice function
+a="123456"
+i=0
+b=''
+while i<len(a):
+    b=a[i]+b
+    i+=1
+print(b)
+
+
+
+a=['Hi','hello','bye','Python','sql']
+i=0
+b=[ ]
+while i<len(a):
+    if len(a[i])%2==0:
+        b+=a[i]
+    i+=1
+print(b)
+
+
+
+
+#a=['python','sql']  o/p=['python':6, 'sql':3]
+
+a=['python', 'sql']
+i=0
+c={}
+while i<len(a):
+    c[a[i]]=len(a[i])
+    i+=1
+print(c)
+
+
+#factorial of a no.
+n=4
+f=1
+for i in range(1,n+1):
+    f=f*i
+print(f)
+
+# a='Hi'  e=['Python','sql']   o/p=['H':'Python','i':'sql']
+
+a="hi"
+e=['Python','sql']
+i=0
+c={}
+while i<len(a) and i<len(e):
+    c[a[i]]=e[i]
+    i+=1
+print(c)
+
+
+#WRITE A PROGRAM TO IDENTIFY THE GIVEN NO. IS PERFECT NO. OR NOT(PERFECT NO. MEANS IF U CONSIDER NO. 6, CONSIDER THE NO. BELOW 6, THAT IS 1,2,3,4,5.
+#DIVIDE 6 BY THESE FIVE NO. WHICH GIVES % 0, 6%2==0 ETC,. ONLY 1,2,3 GIVES MODULOS 0, ADD 1+2+3=6 U GOT 6 AGAIN, SO 6 IS A PERFECT NO.
+
+n=6
+i=1
+sum=0
+while i<n:
+    if n%i==0:
+        sum=sum+i
+    i=i+1
+if sum==n:
+    print("perfect number")
+else:
+    print("not perfect number")
+
+
+#identify given no.is prime or not
+
+i=2
+n=6
+if n<2:
+    print("not prime")
+while i<n:
+    if n%i==0:
+        print("not prime")
+        break
+    i=i+1
+else:
+    print("prime")
