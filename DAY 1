@@ -1,0 +1,170 @@
+"""a=10
+print(id(a))
+
+a=10
+b=20
+print(id(b))
+
+
+a=10
+print(bool(a))
+
+
+a=10
+print(complex(a))
+
+
+INDEX METHOD USED TO EXTRACT SINGLE VALUE
+
+to find the index in forward
+a='Madhuri'
+b=a[4]
+print(b)
+
+to find the index in backword
+a='Madhuri'
+b=a[-4]
+print(b)
+
+SLICE METHOD USED TO EXTRACT MULTI VALUE
+
+a='Madhuri'
+print(a[0:2:2])
+
+a='Madhuri'
+print(a[0:2:2])
+
+a='Hello'
+print(a[0::4])
+
+a='Hello'
+print(a[0:8:4])
+
+to extract EVEN index charecters of string
+
+ b='Swapnodaya
+
+a='Swapnodaya'
+print(a[0::2])
+OR
+a='Swapnodaya'
+print(a[::2])
+
+to extract ODD index characters of string
+
+a='Swapnodaya'
+print(a[1::2])
+
+TO REVERSE A STRING USING SLICE METHOD
+
+
+a='123456789'
+print(a[::-1])
+  OR
+a='123456789'
+print(a[-1:-10:-1])
+  OR
+a='123456789'
+print(a[10:-10:-1])
+
+
+a='MALAYALAM'
+print(a[0::-1])
+
+
+a='MALAYALAM'
+print(a[3::-1])
+
+
+a='MALAYALAM'
+print(a[-10::-2])
+
+
+a='MALAYALAM'
+print(a[-9::-2])
+
+ a='MALAYALAM'
+print(a[-7::-2])
+
+a='MALAYALAM'
+print(a[3::-2])
+
+LIST
+
+update a value
+
+a=[1,2,3]
+a[2]=5
+print(a)
+
+a=[1,2,3]
+b=a.append([4])
+print(b)
+
+a=[1,2,'hello',4]
+print(a[2][0:2])
+
+a=[2,'hi',[10,20,30],5]
+print(a[2][2:4])
+OR
+a=[2,'hi',[10,20,30],5]
+print(a[2][2])
+
+convert an integer to list without using built ib function
+a=[10]+[]
+print(a)
+
+TUPLES
+
+convert a TUPLES to list without using built ib function
+
+a=([1,2,3])+[]
+print(a)
+
+
+d={1:True,2:{False:True},3:[1,2,3]}
+print(d[2])
+
+user_id=input("enter your user id\n")
+
+if user_id=='madhuri':
+    print("user Id is correct")
+    password = input("enter your password\n")
+    if password=='nagi143':
+        #print("password is correct")
+        otp=int(input("enter your otp number\n"))
+        if otp==0000:
+            print("login successful")
+        else:
+            print("incorrect otp")
+    else:
+        print("incorrect password")
+else:
+    print("user Id is incorrect")
+
+grade=int(input("enter your grade\n"))
+if 90<=grade<=100:
+    print("A grade")
+elif 80<=grade<=89:
+    print("B grade")
+elif 70<=grade<=79:
+    print("c grade")
+elif 60<=grade<=69:
+    print("D grade")
+else:
+    print("fail")
+
+grade=int(input("enter your marks\n"))
+if 0<=grade<=100:
+    if(90<=grade<=100):
+        print("A grade")
+    elif 80<=grade<=89:
+        print("B grade")
+    elif 70<=grade<=79:
+        print("c grade")
+    elif 60<=grade<=69:
+        print("D grade")
+    else:
+        print("fail")
+else:
+    print(" please enter a +ve number") """
